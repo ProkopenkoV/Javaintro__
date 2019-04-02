@@ -1,9 +1,8 @@
 package _10;
 
+import _10_Interfaces.TaxiPark_Interface;
 
-
-
-class TaxiPark {
+class TaxiPark implements TaxiPark_Interface {
     public CarSegments[] cars;
     public CarSegments car;
 
@@ -14,16 +13,22 @@ class TaxiPark {
     public int CostOfAllCars() {
         System.out.println(" ");
         System.out.print("1. Cost of all cars : ");
+
         int cost = 0;
         for (int i = 0; i < cars.length; i++) {
             CarSegments car = cars[i];
             cost += car.getPrice();
-
         }
 
-        return cost;
-    }
 
+        return cost;
+
+    }
+    public String retDol(String dol ){
+        String dollar="$";
+
+        return dol;
+    }
     public void sortByFuelConsumption() {
         for (int i = 0; i < cars.length; i++) {
             for (int j = i + 1; j < cars.length; j++) {
@@ -36,31 +41,8 @@ class TaxiPark {
         }
     }
 
-
-    /*  public CarSegments [] searchMaxSpeed(int minSpeed, int maxSpeed) {
-          CarSegments[] result = {};
-          for (int i = 0; i < cars.length; i++) {
-              CarSegments carByMaxSpeed = cars[i];
-              if (carByMaxSpeed.getMaxSpeed() >= minSpeed && carByMaxSpeed.getMaxSpeed() <= maxSpeed) {
-                  result = addForCarSegmentsUp(carByMaxSpeed, result);
-              }
-          }
-          return result;
-      }
-      private CarSegments[] addForCarSegmentsUp(CarSegments addNewCar, CarSegments[]cars) {
-          if (cars.length == 0) {
-              return new CarSegments[]{addNewCar};
-          } else {
-              CarSegments[] newAddCar = new CarSegments[cars.length + 1];
-              for (int i = 0; i < cars.length; i++) {
-                  newAddCar[i] = cars[i];
-
-              }
-              newAddCar[cars.length] = addNewCar;
-              return newAddCar;
-          }
-      }*/
-    public CarSegments[] getcarsByMaxSpeed(int max, int min) {
+    public CarSegments[] getcarsByMaxSpeed(int min, int max) {
+        System.out.print("2. ");
         CarSegments[] temp = cars;
         for (int i = 0; i < cars.length; i++) {
             if (!(cars[i].getMaxSpeed() >= min && cars[i].getMaxSpeed() <= max)) {
@@ -83,7 +65,7 @@ class TaxiPark {
                 ", fuelConsumption=" + auto.getFuelConsumption() +
                 ", maxSpeed=" + auto.getMaxSpeed() +
                 ", numberOfAirbag=" + auto.getNumberOfAirbag() +
-                '}';
+        '}';
     }
 
     public CarSegments[] removingElementByIndex(CarSegments [] cars ,int index){

@@ -20,9 +20,14 @@ public class LadaKalina extends B_Class {
 
     @Override
     public String toString() {
-        return  "Lada Kalina consists of the following characteristics: " +
-                " Price= " + this.getPrice() + " Fuel consumption= " + this.getFuelConsumption() + " Max speed= " + this.getMaxSpeed()+" Number of airbag= "+this.getNumberOfAirbag()+" Number of old seats=" + this.getNumberOfOldSeats()+
-               "      It's B-Class";
+        return  "It's LADA KALINA which consists of the following characteristics: "+"Price= " + this.getPrice() + "$ Fuel consumption= " + this.getFuelConsumption() + " liters Max speed= " + this.getMaxSpeed()+"km/h Number of airbag= "+this.getNumberOfAirbag()
+        +"  Number of old seats=" + this.getNumberOfOldSeats()+
+               "\n   This car belongs to the B-class segment ";
+    }
+
+    @Override
+    public int getPrice(int price) {
+        return 0;
     }
 }
 

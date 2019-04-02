@@ -20,5 +20,8 @@ public class E_Class extends CarSegments {
     }
 
 
-
+    @Override
+    public int getPrice(int price) {
+        return 0;
+    }
 }

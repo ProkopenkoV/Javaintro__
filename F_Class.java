@@ -16,4 +16,8 @@ public class F_Class extends CarSegments{
         return res;
     }
 
+    @Override
+    public int getPrice(int price) {
+        return 0;
+    }
 }

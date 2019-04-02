@@ -18,8 +18,13 @@ public class JaguarXJ  extends F_Class{
 
     @Override
     public String toString() {
-        return "Jaguar XJ consists of the following characteristics: "+"Price= " + this.getPrice() + " Fuel consumption= " + this.getFuelConsumption() + " Max speed= " + this.getMaxSpeed()+" Number of airbag= "+this.getNumberOfAirbag() +
-                " Number of driving wheels= " + this.getNumberOfDrivingWheels()+"     It's F-Class";
+        return "It's JAGUAR XJ which consists of the following characteristics: "+"Price= " + this.getPrice() + "$ Fuel consumption= " + this.getFuelConsumption() + " liters Max speed= " + this.getMaxSpeed()+"km/h Number of airbag= "+this.getNumberOfAirbag() +
+                "airbags Number of driving wheels= " + this.getNumberOfDrivingWheels()+"\nThis car belongs to the F-class segment";
 
+    }
+
+    @Override
+    public int getPrice(int price) {
+        return 0;
     }
 }

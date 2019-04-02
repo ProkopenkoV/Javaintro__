@@ -1,6 +1,8 @@
 package _10;
 
-abstract class CarSegments {
+import _10_Interfaces.Car_Interface;
+
+public abstract class CarSegments implements Car_Interface {
     public int price;
     public int fuelConsumption;
     public int maxSpeed;

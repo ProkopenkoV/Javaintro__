@@ -2,7 +2,6 @@ package _10;
 
 // Европейский сегмент легковых автомобилей = B = Small class
 // LADA Kalina
-
 public class B_Class extends CarSegments {
     String qualit;
 
@@ -21,7 +20,10 @@ public class B_Class extends CarSegments {
         return 0;
     } //для того,чтобы всегда выводило количество подушек = 0
 
-
+    @Override
+    public int getPrice(int price) {
+        return 0;
+    }
 
 
 }

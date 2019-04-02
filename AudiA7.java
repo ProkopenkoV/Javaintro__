@@ -1,6 +1,7 @@
 package _10;
 
 
+
 public class AudiA7 extends E_Class{
     int numberOfGearTransmission; //количество ступеней механической коробки передач
 
@@ -19,9 +20,13 @@ public class AudiA7 extends E_Class{
 
     @Override
     public String toString() {
-        return "Audi A7 consists of the following characteristics:  "+"Price= " + this.getPrice() + " Fuel consumption= " + this.getFuelConsumption() + " Max speed= " + this.getMaxSpeed()+" Number of airbag= "+this.getNumberOfAirbag()
-                +" Number of gear transmission= " +this.getNumberOfGearTransmission()+ "     It's E-Class ";
+        return "   It's AUDI A7 which consists of the following characteristics:  "+"   Price= " + this.getPrice() + "$ Fuel consumption= " + this.getFuelConsumption() + "liters Max speed= " + this.getMaxSpeed()+"km/h Number of airbag= "+this.getNumberOfAirbag()
+                +" Number of gear transmission= " +this.getNumberOfGearTransmission()+ "steps gearbox"+"\n   This car belongs to the E-class segment ";
     }
 
+    @Override
+    public int getPrice(int price) {
+        return 0;
+    }
 }
 

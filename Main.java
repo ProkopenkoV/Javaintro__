@@ -1,6 +1,10 @@
 package _10;
-import  java.util.Arrays;
 
+
+import _10_Interfaces.AudiQ8;
+import _10_Interfaces.BMWX5;
+import _10_Interfaces.Car_Interface;
+import com.sun.org.apache.xpath.internal.SourceTree;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,11 +22,12 @@ public class Main {
 
         CarSegments[] end;
 
-        System.out.println(endTask.CostOfAllCars());
+        System.out.print(endTask.CostOfAllCars());
+        System.out.println(endTask.retDol("$"));
 
         System.out.println(" ");
 
-        end=endTask.getcarsByMaxSpeed(320,280);
+        end=endTask.getcarsByMaxSpeed(0,245);
 
 
 
@@ -30,7 +35,10 @@ public class Main {
         for(int i = 0; i < end.length; i++)
             System.out.println(end[i].toString());
 
-
+        Car_Interface audi = new AudiQ8();
+        System.out.print(audi.getPrice(100000)+" $");
+        Car_Interface bmw =  new BMWX5();
+        System.out.print(bmw.getPrice(95000)+" $");
 
     }
 
