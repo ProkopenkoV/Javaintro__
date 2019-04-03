@@ -11,7 +11,7 @@ public class Main {
         CarSegments[] cars = new CarSegments[]{
                 new LadaKalina(13000,6,160,2,5),
                 new JaguarXJ(100000,15,300,9,8),
-                new AudiA7(70000,12,240,10,7),
+                new AudiA7(60000,12,240,10,7),
 
 
 
@@ -23,11 +23,8 @@ public class Main {
         CarSegments[] end;
 
         System.out.print(endTask.CostOfAllCars());
-        System.out.println(endTask.retDol("$"));
-
         System.out.println(" ");
-
-        end=endTask.getcarsByMaxSpeed(0,245);
+        end=endTask.getCarsByMaxSpeed(0,420);
 
 
 
@@ -36,9 +33,9 @@ public class Main {
             System.out.println(end[i].toString());
 
         Car_Interface audi = new AudiQ8();
-        System.out.print(audi.getPrice(100000)+" $");
+        System.out.print(audi.getPrice(70000));
         Car_Interface bmw =  new BMWX5();
-        System.out.print(bmw.getPrice(95000)+" $");
+        System.out.print(bmw.getPrice(65000));
 
     }
 

@@ -19,7 +19,7 @@ public class AudiQ8 implements Car_Interface {
 
     public int getPrice(int price){
         int res=0;
-        System.out.print("\n3. Цена за автомобиль Audi Q8 = ");
+        System.out.print("\n3. Audi Q8 starting at $ ");
         res=res+price;
         return res;
 

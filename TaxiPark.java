@@ -12,7 +12,7 @@ class TaxiPark implements TaxiPark_Interface {
 
     public int CostOfAllCars() {
         System.out.println(" ");
-        System.out.print("1. Cost of all cars : ");
+        System.out.print("1. Cost of all cars : $ ");
 
         int cost = 0;
         for (int i = 0; i < cars.length; i++) {
@@ -24,11 +24,7 @@ class TaxiPark implements TaxiPark_Interface {
         return cost;
 
     }
-    public String retDol(String dol ){
-        String dollar="$";
 
-        return dol;
-    }
     public void sortByFuelConsumption() {
         for (int i = 0; i < cars.length; i++) {
             for (int j = i + 1; j < cars.length; j++) {
@@ -41,8 +37,8 @@ class TaxiPark implements TaxiPark_Interface {
         }
     }
 
-    public CarSegments[] getcarsByMaxSpeed(int min, int max) {
-        System.out.print("2. ");
+    public CarSegments[] getCarsByMaxSpeed(int min, int max) {
+        System.out.print("\n2. ");
         CarSegments[] temp = cars;
         for (int i = 0; i < cars.length; i++) {
             if (!(cars[i].getMaxSpeed() >= min && cars[i].getMaxSpeed() <= max)) {
@@ -52,7 +48,7 @@ class TaxiPark implements TaxiPark_Interface {
         return temp;
     }
 
-    public CarSegments[] copyArrAndPlusOneElement(CarSegments[] car) {
+    public CarSegments[] arrayCopyAndPlusOneElement(CarSegments[] car) {
         CarSegments[] temp = new CarSegments[car.length+1];
         for (int i = 0; i < car.length; i++)
             car[i] = temp[i];

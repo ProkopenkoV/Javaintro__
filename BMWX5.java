@@ -18,7 +18,7 @@ public class BMWX5 implements Car_Interface {
     @Override
     public int getPrice(int price) {
         int res=0;
-        System.out.print("\n   Цена за автомобиль BMW X5  = ");
+        System.out.print("\n   BMW X5 starting at $ ");
         res=res+price;
         return res;
     }

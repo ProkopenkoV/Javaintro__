@@ -20,7 +20,7 @@ public class AudiA7 extends E_Class{
 
     @Override
     public String toString() {
-        return "   It's AUDI A7 which consists of the following characteristics:  "+"   Price= " + this.getPrice() + "$ Fuel consumption= " + this.getFuelConsumption() + "liters Max speed= " + this.getMaxSpeed()+"km/h Number of airbag= "+this.getNumberOfAirbag()
+        return "   It's AUDI A7 which consists of the following characteristics:  "+"   Price= $ " + this.getPrice() + "  Fuel consumption= " + this.getFuelConsumption() + "liters Max speed= " + this.getMaxSpeed()+"km/h Number of airbag= "+this.getNumberOfAirbag()
                 +" Number of gear transmission= " +this.getNumberOfGearTransmission()+ "steps gearbox"+"\n   This car belongs to the E-class segment ";
     }
 
